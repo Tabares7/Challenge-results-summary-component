@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" type="text/css" src="main.css"/>
- 
-</head>
-<body>
-<main >
-  <!--Card Container   -->
- <div class="flex flex-col md:flex-row " >
+    <title>Frontend Mentor | Results summary component</title>
 
-  <!-- First Section -->
- <div class=" flex flex-col justify-center items-center text-center bg-gradient-to-b from-blue-700 to-blue-800 rounded-xl pt-16 p-10 -mt-10 text-white">
-  <h2 class="title">Your Result</h2>
- <div class="circle rounded-full bg-gradient-to-b from-blue-900 to-blue-700">
-  <h1>76</h1>
-  <h3>of 100</h3>
-</div>
-  <h3 class="sec-title">Great</h3>
-  <p class="comment">You scored higher than 65% of the people who have taken these tests.</p>
-</div>
-<div class="">
-  Summary
-  
-  Reaction
-  80 / 100
-  
-  Memory
-  92 / 100
-  
-  Verbal
-  61 / 100
-  
-  Visual
-  72 / 100
-  
-  Continue
-</div>
-</div>
-</main>
-  
-  
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <main>
+      <!--Card Container   -->
+      <div class="flex flex-col md:flex-row font-semibold">
+        <!-- First Section -->
+        <div
+          class="flex flex-col gap-6 justify-center items-center text-center bg-gradient-to-b from-blue-600 to-blue-900 rounded-3xl pt-16 p-10 -mt-10 text-white"
+        >
+          <h2 class="title text-gray-300">Your Result</h2>
 
-</body>
+          <!-- Cricle Section -->
+          <div
+            class="circle p-10 w-40 h-40 rounded-full flex flex-col bg-gradient-to-b from-blue-900 to-blue-700"
+          >
+            <h1 class="text-6xl">76</h1>
+            <h3 class="text-gray-300">of 100</h3>
+          </div>
+
+          <!-- Secondary Title and Comment Section -->
+          <div class="">
+            <h3 class="sec-title text-2xl">Great</h3>
+            <p class="comment font-extralight">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </div>
+        <div class="">
+          Summary Reaction 80 / 100 Memory 92 / 100 Verbal 61 / 100 Visual 72 /
+          100 Continue
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
