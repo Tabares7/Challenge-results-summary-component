@@ -8,35 +8,46 @@
   
   <title>Frontend Mentor | Results summary component</title>
 
-  <link rel="stylesheet" type="text/css" src=""/>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type="text/css" src="main.css"/>
  
 </head>
-<body class="">
+<body>
+<main >
+  <!--Card Container   -->
+ <div class="flex flex-col md:flex-row " >
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
+  <!-- First Section -->
+ <div class=" flex flex-col justify-center items-center text-center bg-gradient-to-b from-blue-700 to-blue-800 rounded-xl pt-16 p-10 -mt-10 text-white">
+  <h2 class="title">Your Result</h2>
+ <div class="circle rounded-full bg-gradient-to-b from-blue-900 to-blue-700">
+  <h1>76</h1>
+  <h3>of 100</h3>
+</div>
+  <h3 class="sec-title">Great</h3>
+  <p class="comment">You scored higher than 65% of the people who have taken these tests.</p>
+</div>
+<div class="">
   Summary
-
+  
   Reaction
   80 / 100
-
+  
   Memory
   92 / 100
-
+  
   Verbal
   61 / 100
-
+  
   Visual
   72 / 100
-
+  
   Continue
+</div>
+</div>
+</main>
+  
   
 
 </body>
