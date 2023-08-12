@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -14,30 +13,25 @@
 
     <title>Frontend Mentor | Results summary component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
-  <body>
-    <main>
-      <!--Card Container   -->
-      <div class="flex flex-col md:flex-row font-semibold">
+  <body class="flex justify-center items-center min-h-screen ">
+    <main class="">
+      <!--Card Container-->
+      <div class="flex flex-col md:flex-row font-semibold mx-auto md:justify-center md:px-52">
         <!-- First Section -->
-        <div
-          class="flex flex-col gap-6 justify-center items-center text-center bg-gradient-to-b from-blue-600 to-blue-900 rounded-3xl pt-16 p-10 -mt-10 text-white"
-        >
+        <div class="flex flex-col gap-6 justify-center items-center text-center bg-gradient-to-b from-blue-600 to-blue-900 rounded-3xl md:rounded-l-2xl md:rounded-r-none p-10 -mt-10 text-white md:pt-10 md:mt-0 md:w-1/2">
           <h2 class="title text-gray-300">Your Result</h2>
 
-          <!-- Cricle Section -->
-          <div
-            class="circle p-10 w-40 h-40 rounded-full flex flex-col bg-gradient-to-b from-blue-900 to-blue-700"
-          >
+          <!-- Circle Section -->
+          <div class="circle p-10 w-40 h-40 rounded-full flex flex-col bg-gradient-to-b from-blue-900 to-blue-700">
             <h1 class="text-6xl">76</h1>
             <h3 class="text-gray-300">of 100</h3>
           </div>
 
           <!-- Secondary Title and Comment Section -->
-          <div class="">
+          <div class="flex flex-col gap-5">
             <h3 class="sec-title text-2xl">Great</h3>
             <p class="comment text-gray-300 font-extralight">
               You scored higher than 65% of the people who have taken these
@@ -46,47 +40,43 @@
           </div>
         </div>
         <!-- Second Section -->
-        <article class="p-8">
+        <article class="p-8 md:w-1/2 shadow-lg rounded-r-2xl">
           <h2 class="subtitle text-gray-700">Summary</h2>
           <div class="flex flex-col gap-3 my-5">
-
             <!-- Card Value -->
             <div class="rounded-lg card flex justify-between reaction p-5 text-sm">
               <div class="flex gap-2">
-                <img src="./assets/images/icon-reaction.svg" />
+                <img src="./assets/images/icon-reaction.svg" alt="Reaction Icon" />
                 <h3>Reaction</h3>
               </div>
               <h4 class="text-gray-700">
                 80 <span class="text-gray-400">/ 100</span>
               </h4>
             </div>
-
             <!-- Card Value -->
             <div class="rounded-lg card flex justify-between memory p-5 text-sm">
               <div class="flex gap-2">
-                <img src="./assets/images/icon-memory.svg" />
+                <img src="./assets/images/icon-memory.svg" alt="Memory Icon" />
                 <h3>Memory</h3>
               </div>
               <h4 class="text-gray-700">
                 92 <span class="text-gray-400">/ 100</span>
               </h4>
             </div>
-
             <!-- Card Value -->
             <div class="rounded-lg card flex justify-between verbal p-5 text-sm">
               <div class="flex gap-2">
-                <img src="./assets/images/icon-verbal.svg" />
+                <img src="./assets/images/icon-verbal.svg" alt="Verbal Icon" />
                 <h3>Verbal</h3>
               </div>
               <h4 class="text-gray-700">
                 61 <span class="text-gray-400">/ 100</span>
               </h4>
             </div>
-
             <!-- Card Value -->
             <div class="rounded-lg card flex justify-between visual p-5 text-sm">
               <div class="flex gap-2">
-                <img src="./assets/images/icon-visual.svg" />
+                <img src="./assets/images/icon-visual.svg" alt="Visual Icon" />
                 <h3>Visual</h3>
               </div>
               <h4 class="text-gray-700">
@@ -96,7 +86,7 @@
           </div>
           
           <!-- Button -->
-          <button>Continue</button>
+          <button class="bg-gray-800 w-full rounded-full p-4 font-semibold text-white hover:bg-gradient-to-b from-blue-600 to-blue-900">Continue</button>
         </article>
       </div>
     </main>
